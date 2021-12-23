@@ -233,7 +233,7 @@ const App = () => {
           />
         ))}
       </div>
-      <ScoreBoard score={scoreDisplay}></ScoreBoard>
+      <ScoreBoard score={scoreDisplay} />
     </div>
   );
 };

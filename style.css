@@ -35,24 +35,34 @@ h1 {
 
 body {
     background-image: url("images/leonardo-borazio-1-web.jpg");
-    max-width: 100vh;
+    background-repeat: no-repeat;
+    max-width: 90%;
     display: flex;
 }
 
 .score-board {
     background-color: #3954ac;
     border-radius: 10px;
-    margin-top: 200px;
-    margin-left: 200px;
-    margin-bottom: 350px;
-    min-width: 200px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     text-align: center;
     background-image: linear-gradient(#114da2, #394998);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
     color: #dddd10;
+}
+
+.bruh {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    margin-left: 200px;
+    margin-bottom: 40%;
+    min-width: 200px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }

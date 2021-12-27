@@ -1,22 +1,15 @@
 import { useEffect, useState } from "react";
 import ScoreBoard from "./components/ScoreBoard";
-import blueCandy from "./images/google-fitness-2476490.svg";
-import redCandy from "./images/google-home-2476489.svg";
-import greenCandy from "./images/google-maps-2476488.svg";
-import yellowCandy from "./images/google-meet-2476480.svg";
-import orangeCandy from "./images/google-photos-2476486.svg";
-import purpleCandy from "./images/google-podcasts-2476485.svg";
+import ech0 from "./images/echo.png";
+import frost from "./images/frost.png";
+import mesa from "./images/mesa.png";
+import nekros from "./images/nekros.png";
+import nix from "./images/nix.png";
+import volt from "./images/volt.png";
 import blank from "./images/blank.png";
 
 const width = 8;
-const candyColors = [
-  blueCandy,
-  redCandy,
-  greenCandy,
-  yellowCandy,
-  orangeCandy,
-  purpleCandy,
-];
+const candyColors = [ech0, frost, mesa, nekros, nix, volt];
 
 const App = () => {
   const [currentColorArrangement, setCurrentColorArrangement] = useState([]);
@@ -216,6 +209,7 @@ const App = () => {
 
   return (
     <div className="app">
+      <ScoreBoard score={scoreDisplay} />
       <div className="game">
         {currentColorArrangement.map((candyColor, index) => (
           <img
@@ -233,7 +227,6 @@ const App = () => {
           />
         ))}
       </div>
-      <ScoreBoard score={scoreDisplay} />
     </div>
   );
 };

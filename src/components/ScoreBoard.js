@@ -1,7 +1,10 @@
 const ScoreBoard = ({ score }) => {
   return (
-    <div className="score-board">
-      <h2>{score}</h2>
+    <div className="bruh">
+      <div className="score-board">
+        <h3>score</h3>
+        <h1>{score}</h1>
+      </div>
     </div>
   );
 };
